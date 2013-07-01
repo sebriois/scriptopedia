@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Add Script
+{% endblock %}
+
+<script>
+
+</script>
+{% block header %}Add a Script{% endblock %}
+{% block content %}
+
+
+<form action="{% url 'new_script' %}" method="post">{% csrf_token %}
+	{{form.as_p}}
+	{{formset.as_p}}
+	<input type="button" value="Add parameter" id="add_param">
+	<script>
+    	$('#add_more').click(function() {
+        	addMore('div.table:last', 'parameter');
+    	});
+</script>
+
+
+
+	<input type="submit" value="submit"/>
+</form>
+
+
+{% endblock %}
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<tool id="{{id}}" name="{{name}}">
+
+	<command>
+	{{command_line}}
+	</command>
+	
+	<inputs>
+	
+	{% for item in inputs %}
+		{% if item.type == 'data' %}
+    	<param name="{{item.name}}" type="{{item.type}}" format="item.format" {% if item.optional %} optional="{{item.optional}}" {% endif %} {% if item.label %} label="{{item.label}}" {% endif %}/>
+    	{% elif item.type == 'select' %}
+    	<param name="{{item.name}}" type="{{item.type}}" {% if item.label %} label="{{item.label}}" {% endif %}>
+    		{% for opt in item.option %}
+    		<option value="{{opt.0}}">{{opt.1}}</option>
+    		{% endfor %}
+    	</param>
+    	{% else %}
+    	<param name="{{item.name}}" type="{{item.type}}" {% if item.optional %} optional="{{item.optional}}" {% endif %} {% if item.label %} label="{{item.label}}" {% endif %}/>
+		{% endif %}   
+  
+    {% endfor %}
+	</inputs>
+	
+	<outputs>
+	{% for item in outputs %}
+		<data  name="{{item.name}}" format="{{item.format}}" {% if item.label %} label="{{item.label}}" {% endif %} />
+    {% endfor %}
+	</outputs>
+
+	{% if help %}
+    <help>
+{{help}}
+    </help>
+	{% endif %}
+	
+	
+</tool>
+
+	

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Script list{% endblock %}
+{% block header %}Script list{% endblock %}
+
+{% block content %}
+<table>
+	<thead>
+		<th>Command</th>
+		<th>Help</th>
+	</thead>
+	<tbody>
+		{% for script in scripts %}
+			<tr>
+				<td>{{ script.command_line }}</td>
+				<td>{{ script.help }}</td>
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+<a href="{% url 'new_script' %}">Add script</a>
+
+{% endblock %}

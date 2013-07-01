@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <script type="text/javascript" src="{% static 'js/jquery-2.0.2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+    <title>{% block title %}Scripts database{% endblock %}</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/admin/">Administration site</a></li>
+            <li><a href="{% url 'script_list' %}">Script List</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+    	<h1>{% block header %}{% endblock %}</h1>
+        {% block content %}{% endblock %}
+    </div>
+    
+     <div id="footer">
+        {% block footer %}{% endblock %}
+    </div>
+</body>
+</html>

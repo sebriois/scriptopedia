@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<tool id="{{id}}" name="{{name}}" {% if version %} version="{{version}}" {% endif %}>
+	<description> {{description}} </description>
+
+	<command>
+	{{command_line}}
+	</command>
+	
+	{% if requirements %}
+    <requirements>
+    {% for item in requirements %}
+    	<requirement type="{{item.type}}" {% if item.version %}version="{{item.version}}"{% endif %}>{{item.value}}</requirement>
+    {% endfor %}
+    </requirements>
+	{% endif %}	
+	
+	<inputs>
+	{% for item in inputs %}
+		{% if item.type == 'data' %}
+    	<param name="{{item.name}}" type="{{item.type}}" format="{% for f in item.format %}{{f}} {% endfor %}" {% if item.optional %} optional="{{item.optional}}" {% endif %} {% if item.label %} label="{{item.label}}" {% endif %} {% if item.help %} help="{{item.help}}" {% endif %}/>
+    	{% elif item.type == 'select' %}
+    	<param name="{{item.name}}" type="{{item.type}}" {% if item.display != "dropdown" %} display="{{item.display}}" {% endif %} {% if item.multiple %} multiple="{{item.multiple}}" {% endif %} {% if item.force_select %} force_select="{{item.force_select}}" {% endif %} {% if item.label %} label="{{item.label}}" {% endif %} {% if item.help %} help="{{item.help}}" {% endif %}>
+    		{% for opt in item.option %}
+    		<option value="{{opt.0}}" selected="{{opt.2}}" >{{opt.1}}</option>
+    		{% endfor %}
+    	</param>
+    	{% else %}
+    	<param name="{{item.name}}" type="{{item.type}}" {% if item.value %} value="{{item.value}}"{% endif %} {% if item.optional %} optional="{{item.optional}}" {% endif %} {% if item.size %} size="{{item.size}}"{% endif %} {% if item.min %} min="{{item.min}}"{% endif %} {% if item.max %} max="{{item.max}}" {% endif %} {% if item.label %} label="{{item.label}}" {% endif %} {% if item.help %} help="{{item.help}}" {% endif %}/>
+		{% endif %}   
+  
+    {% endfor %}
+	</inputs>
+	
+	
+	<outputs>
+	{% for item in outputs %}
+		<data  name="{{item.name}}" format="{{item.format}}" {% if item.label %} label="{{item.label}}" {% endif %} {% if item.metadata_source %} metadata_source="{{item.metadata_source}}" {% endif %} {% if item.from_work_dir %} from_work_dir="{{item.from_work_dir}}" {% endif %} />
+    {% endfor %}
+	</outputs>
+
+	{% if help %}
+    <help>
+{{help}}
+    </help>
+	{% endif %}
+	
+	
+</tool>
+
+	
