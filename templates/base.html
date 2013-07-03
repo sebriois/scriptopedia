@@ -1,31 +1,51 @@
 {% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lte IE 6]> <html class="no-js ie6 ie67 ie678" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 ie67 ie678" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 ie678" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta name="viewport" content="initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{% static 'css/knacss.css' %}" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <script type="text/javascript" src="{% static 'js/jquery-2.0.2.min.js' %}"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
-    <title>{% block title %}Scripts database{% endblock %}</title>
+    <!--[if lt IE 9]><script src="{% static 'js/html5shiv.js'%}"></script><![endif]-->
+    
+    <title>{% block title %}scriptopedia{% endblock %}</title>
+    
+    {% block extra_head %}{% endblock %}
 </head>
 
 <body>
-    <div id="sidebar">
-        {% block sidebar %}
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/admin/">Administration site</a></li>
-            <li><a href="{% url 'script_list' %}">Script List</a></li>
-        </ul>
-        {% endblock %}
-    </div>
-
-    <div id="content">
-    	<h1>{% block header %}{% endblock %}</h1>
-        {% block content %}{% endblock %}
-    </div>
+    <header class="pa1">
+        <h1>Scriptopedia</h1>
+    </header>
     
-     <div id="footer">
-        {% block footer %}{% endblock %}
-    </div>
+    <nav id="main-navigation">
+        <a href="{% url 'script_list' %}" class="{% block menu_script_list %}{% endblock %}">View script list</a>
+        <a href="{% url 'script_new' %}" class="{% block menu_script_new %}{% endblock %}">Add script</a>
+    </nav>
+    
+    <nav id="sub-navigation"></nav>
+    
+    <section class="pa3">
+        <h2>{% block header %}{% endblock %}</h2>
+        {% if messages %}
+		  <ul class="messages unstyled pa0 ma0">
+		    {% for message in messages %}
+		      <li class="{{ message.tags }}">{{ message|escape|safe }}</li>
+		    {% endfor %}
+		  </ul>
+		{% endif %}
+        {% block content %}{% endblock %}
+    </section>
+    
+    <footer></footer>
 </body>
 </html>

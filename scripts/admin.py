@@ -1,10 +1,15 @@
 from django.contrib import admin
-from models import Script, Parameter, Option, FileType
+from models import Script, Parameter, Option, FileType, Section
 
 
 class ScriptAdmin(admin.ModelAdmin):
     list_display    = ['name', 'command', 'description', 'author' ]  
 admin.site.register(Script, ScriptAdmin)
+
+
+class SectionAdmin(admin.ModelAdmin):
+    list_display    = ['id', 'name', 'label' ]  
+admin.site.register(Section, SectionAdmin)
 
 
 class ParameterAdmin(admin.ModelAdmin):

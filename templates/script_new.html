@@ -1,32 +1,36 @@
 {% extends "base.html" %}
 
-{% block title %}
-	Add Script
-{% endblock %}
+{% block header %}New Script{% endblock %}
+{% block menu_script_new %}active{% endblock %}
 
-<script>
-
-</script>
-{% block header %}Add a Script{% endblock %}
 {% block content %}
+<form action="{% url 'script_new' %}" method="POST">{% csrf_token %}
+    {{ formset.management_form }}
+    <input type="submit" value="Save script and add new" name="save_and_add"  class="right" />
+    <input type="submit" value="Save script" name="save_and_quit" class="right" />
+    
+    <section class="line grid2">
+	    <aside class="mod">
+	        <h3>1. Script details</h3>
+	        <ul class="unstyled">
+                {{ form.as_ul }}
+	        </ul>
+	    </aside>
+	    
+	    <aside class="mod">
+	        <h3>2. Script Parameters</h3>
+	        {% for param_form in formset %}
+	           <ul class="parameter unstyled pa1">
+	               <li class="right">
+	                   {{ param_form.DELETE }}
+	                   <button class="delete_param">Delete</button>
+	               </li>
+	               {{ param_form.as_ul }}
+	           </ul>
+	        {% endfor %}
+	        <input type="button" value="+" id="add_more">
+	    </aside>
+    </section>
 
-
-<form action="{% url 'new_script' %}" method="post">{% csrf_token %}
-	{{form.as_p}}
-	{{formset.as_p}}
-	<input type="button" value="Add parameter" id="add_param">
-	<script>
-    	$('#add_more').click(function() {
-        	addMore('div.table:last', 'parameter');
-    	});
-</script>
-
-
-
-	<input type="submit" value="submit"/>
 </form>
-
-
 {% endblock %}
-
-

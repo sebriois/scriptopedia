@@ -1,0 +1,1512 @@
+[
+{
+  "pk": 1, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "permission", 
+    "name": "permission", 
+    "app_label": "auth"
+  }
+},
+{
+  "pk": 2, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "group", 
+    "name": "group", 
+    "app_label": "auth"
+  }
+},
+{
+  "pk": 3, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "user", 
+    "name": "user", 
+    "app_label": "auth"
+  }
+},
+{
+  "pk": 4, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "contenttype", 
+    "name": "content type", 
+    "app_label": "contenttypes"
+  }
+},
+{
+  "pk": 5, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "session", 
+    "name": "session", 
+    "app_label": "sessions"
+  }
+},
+{
+  "pk": 6, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "site", 
+    "name": "site", 
+    "app_label": "sites"
+  }
+},
+{
+  "pk": 7, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "logentry", 
+    "name": "log entry", 
+    "app_label": "admin"
+  }
+},
+{
+  "pk": 8, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "option", 
+    "name": "option", 
+    "app_label": "scripts"
+  }
+},
+{
+  "pk": 9, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "filetype", 
+    "name": "file type", 
+    "app_label": "scripts"
+  }
+},
+{
+  "pk": 10, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "parameter", 
+    "name": "parameter", 
+    "app_label": "scripts"
+  }
+},
+{
+  "pk": 11, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+    "model": "script", 
+    "name": "script", 
+    "app_label": "scripts"
+  }
+},
+{
+  "pk": "15kpkmly2dallchzbqv96qh2x1oy1wy6", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2013-07-15T09:42:53.897Z", 
+    "session_data": "YzcwOGIzM2QxNzQ2M2ZjYWUxMWM1Y2UyMTM4ZTM4NjIzMmMyMWQ4NjqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHEDVQ1fYXV0aF91c2VyX2lkcQRLAnUu"
+  }
+},
+{
+  "pk": "dw7qrx6gqq2vnl5uq38n78vam8xibg51", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2013-07-11T13:52:30.891Z", 
+    "session_data": "YjM4M2Y4NmU2MzJiYWQ2NzhiYTc3YjRhNDQ0NGM3YjQ5NmMyYWE3MTqAAn1xAS4="
+  }
+},
+{
+  "pk": "sgn3ithfpohqsp6ncclmob3alqnt7p3k", 
+  "model": "sessions.session", 
+  "fields": {
+    "expire_date": "2013-07-11T13:53:02.250Z", 
+    "session_data": "OGE2YjI5ZTVmZTNlODdjN2RhZWYzNjYyMTI4MGU1MTQyYzgzMmEwNzqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHEDVQ1fYXV0aF91c2VyX2lkcQRLAXUu"
+  }
+},
+{
+  "pk": 1, 
+  "model": "sites.site", 
+  "fields": {
+    "domain": "example.com", 
+    "name": "example.com"
+  }
+},
+{
+  "pk": 0, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "ab1", 
+    "label": ""
+  }
+},
+{
+  "pk": 1, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "affybatch", 
+    "label": ""
+  }
+},
+{
+  "pk": 2, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "afg", 
+    "label": ""
+  }
+},
+{
+  "pk": 3, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "axt", 
+    "label": ""
+  }
+},
+{
+  "pk": 4, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "bam", 
+    "label": ""
+  }
+},
+{
+  "pk": 5, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "bcf", 
+    "label": ""
+  }
+},
+{
+  "pk": 6, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "bed", 
+    "label": ""
+  }
+},
+{
+  "pk": 7, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "bed12", 
+    "label": ""
+  }
+},
+{
+  "pk": 8, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "bed6", 
+    "label": ""
+  }
+},
+{
+  "pk": 9, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "bedgraph", 
+    "label": ""
+  }
+},
+{
+  "pk": 10, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "bedstrict", 
+    "label": ""
+  }
+},
+{
+  "pk": 11, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "bgzip", 
+    "label": ""
+  }
+},
+{
+  "pk": 12, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "bigbed", 
+    "label": ""
+  }
+},
+{
+  "pk": 13, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "bigwig", 
+    "label": ""
+  }
+},
+{
+  "pk": 14, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "bmp", 
+    "label": ""
+  }
+},
+{
+  "pk": 15, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "bowtie_base_index", 
+    "label": ""
+  }
+},
+{
+  "pk": 16, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "bowtie_color_index", 
+    "label": ""
+  }
+},
+{
+  "pk": 17, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "chrint", 
+    "label": ""
+  }
+},
+{
+  "pk": 18, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "cisml", 
+    "label": ""
+  }
+},
+{
+  "pk": 19, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "csfasta", 
+    "label": ""
+  }
+},
+{
+  "pk": 20, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "csv", 
+    "label": ""
+  }
+},
+{
+  "pk": 21, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "customtrack", 
+    "label": ""
+  }
+},
+{
+  "pk": 22, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "data", 
+    "label": ""
+  }
+},
+{
+  "pk": 23, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "eigenstratgeno", 
+    "label": ""
+  }
+},
+{
+  "pk": 24, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "eigenstratpca", 
+    "label": ""
+  }
+},
+{
+  "pk": 25, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "eland", 
+    "label": ""
+  }
+},
+{
+  "pk": 26, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "elandmulti", 
+    "label": ""
+  }
+},
+{
+  "pk": 27, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "encodepeak", 
+    "label": ""
+  }
+},
+{
+  "pk": 28, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "eps", 
+    "label": ""
+  }
+},
+{
+  "pk": 29, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "eset", 
+    "label": ""
+  }
+},
+{
+  "pk": 30, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "fasta", 
+    "label": ""
+  }
+},
+{
+  "pk": 31, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "fastq", 
+    "label": ""
+  }
+},
+{
+  "pk": 32, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "fastqcssanger", 
+    "label": ""
+  }
+},
+{
+  "pk": 33, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "fastqillumina", 
+    "label": ""
+  }
+},
+{
+  "pk": 34, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "fastqsanger", 
+    "label": ""
+  }
+},
+{
+  "pk": 35, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "fastqsolexa", 
+    "label": ""
+  }
+},
+{
+  "pk": 36, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "fli", 
+    "label": ""
+  }
+},
+{
+  "pk": 37, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "fped", 
+    "label": ""
+  }
+},
+{
+  "pk": 38, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "fphe", 
+    "label": ""
+  }
+},
+{
+  "pk": 39, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "fqtoc", 
+    "label": ""
+  }
+},
+{
+  "pk": 40, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "gatk_dbsnp", 
+    "label": ""
+  }
+},
+{
+  "pk": 41, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "gatk_interval", 
+    "label": ""
+  }
+},
+{
+  "pk": 42, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "gatk_recal", 
+    "label": ""
+  }
+},
+{
+  "pk": 43, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "gatk_report", 
+    "label": ""
+  }
+},
+{
+  "pk": 44, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "gatk_tranche", 
+    "label": ""
+  }
+},
+{
+  "pk": 45, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "genetrack", 
+    "label": ""
+  }
+},
+{
+  "pk": 46, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "gff", 
+    "label": ""
+  }
+},
+{
+  "pk": 47, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "gff3", 
+    "label": ""
+  }
+},
+{
+  "pk": 48, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "gg", 
+    "label": ""
+  }
+},
+{
+  "pk": 49, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "gif", 
+    "label": ""
+  }
+},
+{
+  "pk": 50, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "gmaj.zip", 
+    "label": ""
+  }
+},
+{
+  "pk": 51, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "gtf", 
+    "label": ""
+  }
+},
+{
+  "pk": 52, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "h5", 
+    "label": ""
+  }
+},
+{
+  "pk": 53, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "html", 
+    "label": ""
+  }
+},
+{
+  "pk": 54, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "im", 
+    "label": ""
+  }
+},
+{
+  "pk": 55, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "interval", 
+    "label": ""
+  }
+},
+{
+  "pk": 56, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "interval_index", 
+    "label": ""
+  }
+},
+{
+  "pk": 57, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "jpg", 
+    "label": ""
+  }
+},
+{
+  "pk": 58, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "laj", 
+    "label": ""
+  }
+},
+{
+  "pk": 59, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "lav", 
+    "label": ""
+  }
+},
+{
+  "pk": 60, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "ldindep", 
+    "label": ""
+  }
+},
+{
+  "pk": 61, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "len", 
+    "label": ""
+  }
+},
+{
+  "pk": 62, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "linecount", 
+    "label": ""
+  }
+},
+{
+  "pk": 63, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "lped", 
+    "label": ""
+  }
+},
+{
+  "pk": 64, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "maf", 
+    "label": ""
+  }
+},
+{
+  "pk": 65, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "mafcustomtrack", 
+    "label": ""
+  }
+},
+{
+  "pk": 66, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "malist", 
+    "label": ""
+  }
+},
+{
+  "pk": 67, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "memexml", 
+    "label": ""
+  }
+},
+{
+  "pk": 68, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "nex", 
+    "label": ""
+  }
+},
+{
+  "pk": 69, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "nhx", 
+    "label": ""
+  }
+},
+{
+  "pk": 70, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "pbed", 
+    "label": ""
+  }
+},
+{
+  "pk": 71, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "pbm", 
+    "label": ""
+  }
+},
+{
+  "pk": 72, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "pcd", 
+    "label": ""
+  }
+},
+{
+  "pk": 73, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "pcx", 
+    "label": ""
+  }
+},
+{
+  "pk": 74, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "pdf", 
+    "label": ""
+  }
+},
+{
+  "pk": 75, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "pgm", 
+    "label": ""
+  }
+},
+{
+  "pk": 76, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "pheno", 
+    "label": ""
+  }
+},
+{
+  "pk": 77, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "phyloxml", 
+    "label": ""
+  }
+},
+{
+  "pk": 78, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "picard_interval_list", 
+    "label": ""
+  }
+},
+{
+  "pk": 79, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "pileup", 
+    "label": ""
+  }
+},
+{
+  "pk": 80, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "png", 
+    "label": ""
+  }
+},
+{
+  "pk": 81, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "pphe", 
+    "label": ""
+  }
+},
+{
+  "pk": 82, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "ppm", 
+    "label": ""
+  }
+},
+{
+  "pk": 83, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "psd", 
+    "label": ""
+  }
+},
+{
+  "pk": 84, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "qual", 
+    "label": ""
+  }
+},
+{
+  "pk": 85, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "qual454", 
+    "label": ""
+  }
+},
+{
+  "pk": 86, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "qualillumina", 
+    "label": ""
+  }
+},
+{
+  "pk": 87, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "qualsolexa", 
+    "label": ""
+  }
+},
+{
+  "pk": 88, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "qualsolid", 
+    "label": ""
+  }
+},
+{
+  "pk": 89, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "rast", 
+    "label": ""
+  }
+},
+{
+  "pk": 90, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "rexpbase", 
+    "label": ""
+  }
+},
+{
+  "pk": 91, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "rgb", 
+    "label": ""
+  }
+},
+{
+  "pk": 92, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "rgenetics", 
+    "label": ""
+  }
+},
+{
+  "pk": 93, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "Roadmaps", 
+    "label": ""
+  }
+},
+{
+  "pk": 94, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "sam", 
+    "label": ""
+  }
+},
+{
+  "pk": 95, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "scf", 
+    "label": ""
+  }
+},
+{
+  "pk": 96, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "Sequences", 
+    "label": ""
+  }
+},
+{
+  "pk": 97, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "sff", 
+    "label": ""
+  }
+},
+{
+  "pk": 98, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "snpmatrix", 
+    "label": ""
+  }
+},
+{
+  "pk": 99, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "snptest", 
+    "label": ""
+  }
+},
+{
+  "pk": 100, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "summary_tree", 
+    "label": ""
+  }
+},
+{
+  "pk": 101, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "svg", 
+    "label": ""
+  }
+},
+{
+  "pk": 102, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "tabix", 
+    "label": ""
+  }
+},
+{
+  "pk": 103, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "tabular", 
+    "label": ""
+  }
+},
+{
+  "pk": 104, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "taxonomy", 
+    "label": ""
+  }
+},
+{
+  "pk": 105, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "tiff", 
+    "label": ""
+  }
+},
+{
+  "pk": 106, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "toolshed.gz", 
+    "label": ""
+  }
+},
+{
+  "pk": 107, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "twobit", 
+    "label": ""
+  }
+},
+{
+  "pk": 108, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "txt", 
+    "label": ""
+  }
+},
+{
+  "pk": 109, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "vcf", 
+    "label": ""
+  }
+},
+{
+  "pk": 110, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "vcf_bgzip", 
+    "label": ""
+  }
+},
+{
+  "pk": 111, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "velvet", 
+    "label": ""
+  }
+},
+{
+  "pk": 112, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "wig", 
+    "label": ""
+  }
+},
+{
+  "pk": 113, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "xbm", 
+    "label": ""
+  }
+},
+{
+  "pk": 114, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "xls", 
+    "label": ""
+  }
+},
+{
+  "pk": 115, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "xml", 
+    "label": ""
+  }
+},
+{
+  "pk": 116, 
+  "model": "scripts.filetype", 
+  "fields": {
+    "extension": "xpm", 
+    "label": ""
+  }
+},
+{
+  "pk": 1, 
+  "model": "scripts.parameter", 
+  "fields": {
+    "name": "i", 
+    "file_type": 30, 
+    "label": "Fasta File", 
+    "param_type": 5, 
+    "is_required": true, 
+    "options": [], 
+    "param_io": 0
+  }
+},
+{
+  "pk": 2, 
+  "model": "scripts.parameter", 
+  "fields": {
+    "name": "i", 
+    "file_type": 30, 
+    "label": "Fasta File", 
+    "param_type": 5, 
+    "is_required": true, 
+    "options": [], 
+    "param_io": 0
+  }
+},
+{
+  "pk": 3, 
+  "model": "scripts.parameter", 
+  "fields": {
+    "name": "i", 
+    "file_type": 30, 
+    "label": "Fasta File", 
+    "param_type": 5, 
+    "is_required": true, 
+    "options": [], 
+    "param_io": 0
+  }
+},
+{
+  "pk": 4, 
+  "model": "scripts.parameter", 
+  "fields": {
+    "name": "o", 
+    "file_type": 20, 
+    "label": "Output File", 
+    "param_type": 5, 
+    "is_required": false, 
+    "options": [], 
+    "param_io": 1
+  }
+},
+{
+  "pk": 5, 
+  "model": "scripts.parameter", 
+  "fields": {
+    "name": "fasta", 
+    "file_type": 30, 
+    "label": "Fasta File", 
+    "param_type": 5, 
+    "is_required": true, 
+    "options": [], 
+    "param_io": 0
+  }
+},
+{
+  "pk": 6, 
+  "model": "scripts.parameter", 
+  "fields": {
+    "name": "ref", 
+    "file_type": 30, 
+    "label": "Ref Genome Fasta File", 
+    "param_type": 5, 
+    "is_required": false, 
+    "options": [], 
+    "param_io": 0
+  }
+},
+{
+  "pk": 8, 
+  "model": "scripts.script", 
+  "fields": {
+    "abs_path": "workspace/bin", 
+    "help": "", 
+    "parameters": [
+      3, 
+      4
+    ], 
+    "author": "seb", 
+    "name": "test6.pl", 
+    "command": "perl test6.pl -i fasta -o csv", 
+    "description": "test6"
+  }
+},
+{
+  "pk": 9, 
+  "model": "scripts.script", 
+  "fields": {
+    "abs_path": "/usr/local/prod/bin/Alignment/ConsensusBlast2Fasta.pl", 
+    "help": "Usage:\r\n /usr/local/prod/bin/Alignment/ConsensusBlast2Fasta.pl [options]*\r\n  Requiered parameters:\r\n        -fasta  <file> (path and name)\r\n        -ref    <file> (path and name)\r\n\r\n  Optional parameters:\r\n        [-calp_threshold] <number> (The default threshold is 60, which is 60 % of the CALP)\r\n        [-index_i] <number> (The default index_i is 1, indicate which index to use, name is parse with : and |)\r\n        [-index_r] <number> (The default index_r is 1, indicate which index to use, name is parse with : and |)\r\n        [-verbose] (if typed then the script shows process message)\r\n        [-h => gives this help and exit]", 
+    "parameters": [
+      5, 
+      6
+    ], 
+    "author": "CM", 
+    "name": "ConsensusBlast2Fasta.pl", 
+    "command": "ConsensusBlast2Fasta.pl -fasta FASTA_FILE -ref FASTA_FILE", 
+    "description": ""
+  }
+},
+{
+  "pk": 1, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_permission", 
+    "name": "Can add permission", 
+    "content_type": 1
+  }
+},
+{
+  "pk": 2, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_permission", 
+    "name": "Can change permission", 
+    "content_type": 1
+  }
+},
+{
+  "pk": 3, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_permission", 
+    "name": "Can delete permission", 
+    "content_type": 1
+  }
+},
+{
+  "pk": 4, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_group", 
+    "name": "Can add group", 
+    "content_type": 2
+  }
+},
+{
+  "pk": 5, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_group", 
+    "name": "Can change group", 
+    "content_type": 2
+  }
+},
+{
+  "pk": 6, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_group", 
+    "name": "Can delete group", 
+    "content_type": 2
+  }
+},
+{
+  "pk": 7, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_user", 
+    "name": "Can add user", 
+    "content_type": 3
+  }
+},
+{
+  "pk": 8, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_user", 
+    "name": "Can change user", 
+    "content_type": 3
+  }
+},
+{
+  "pk": 9, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_user", 
+    "name": "Can delete user", 
+    "content_type": 3
+  }
+},
+{
+  "pk": 10, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_contenttype", 
+    "name": "Can add content type", 
+    "content_type": 4
+  }
+},
+{
+  "pk": 11, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_contenttype", 
+    "name": "Can change content type", 
+    "content_type": 4
+  }
+},
+{
+  "pk": 12, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_contenttype", 
+    "name": "Can delete content type", 
+    "content_type": 4
+  }
+},
+{
+  "pk": 13, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_session", 
+    "name": "Can add session", 
+    "content_type": 5
+  }
+},
+{
+  "pk": 14, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_session", 
+    "name": "Can change session", 
+    "content_type": 5
+  }
+},
+{
+  "pk": 15, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_session", 
+    "name": "Can delete session", 
+    "content_type": 5
+  }
+},
+{
+  "pk": 16, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_site", 
+    "name": "Can add site", 
+    "content_type": 6
+  }
+},
+{
+  "pk": 17, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_site", 
+    "name": "Can change site", 
+    "content_type": 6
+  }
+},
+{
+  "pk": 18, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_site", 
+    "name": "Can delete site", 
+    "content_type": 6
+  }
+},
+{
+  "pk": 19, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_logentry", 
+    "name": "Can add log entry", 
+    "content_type": 7
+  }
+},
+{
+  "pk": 20, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_logentry", 
+    "name": "Can change log entry", 
+    "content_type": 7
+  }
+},
+{
+  "pk": 21, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_logentry", 
+    "name": "Can delete log entry", 
+    "content_type": 7
+  }
+},
+{
+  "pk": 22, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_option", 
+    "name": "Can add option", 
+    "content_type": 8
+  }
+},
+{
+  "pk": 23, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_option", 
+    "name": "Can change option", 
+    "content_type": 8
+  }
+},
+{
+  "pk": 24, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_option", 
+    "name": "Can delete option", 
+    "content_type": 8
+  }
+},
+{
+  "pk": 25, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_filetype", 
+    "name": "Can add file type", 
+    "content_type": 9
+  }
+},
+{
+  "pk": 26, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_filetype", 
+    "name": "Can change file type", 
+    "content_type": 9
+  }
+},
+{
+  "pk": 27, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_filetype", 
+    "name": "Can delete file type", 
+    "content_type": 9
+  }
+},
+{
+  "pk": 28, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_parameter", 
+    "name": "Can add parameter", 
+    "content_type": 10
+  }
+},
+{
+  "pk": 29, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_parameter", 
+    "name": "Can change parameter", 
+    "content_type": 10
+  }
+},
+{
+  "pk": 30, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_parameter", 
+    "name": "Can delete parameter", 
+    "content_type": 10
+  }
+},
+{
+  "pk": 31, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "add_script", 
+    "name": "Can add script", 
+    "content_type": 11
+  }
+},
+{
+  "pk": 32, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "change_script", 
+    "name": "Can change script", 
+    "content_type": 11
+  }
+},
+{
+  "pk": 33, 
+  "model": "auth.permission", 
+  "fields": {
+    "codename": "delete_script", 
+    "name": "Can delete script", 
+    "content_type": 11
+  }
+},
+{
+  "pk": 1, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "u796351", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2013-06-27T13:53:02.145Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$Miq9UDQGleWQ$V5UW8BMdQGuByipYbpXYcKl9Q0Y8Jj7TIW60XvvHsOM=", 
+    "email": "a@a.com", 
+    "date_joined": "2013-05-23T14:31:52.116Z"
+  }
+},
+{
+  "pk": 2, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "guillaume", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2013-07-01T09:42:53.895Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$6n4JXayNkoy7$mBV/arjIcYC/LobQOvOM9+RoNI72Tp4wyi6flQVnQ24=", 
+    "email": "guillaume.collange@syngenta.com", 
+    "date_joined": "2013-07-01T09:42:18.416Z"
+  }
+}
+]

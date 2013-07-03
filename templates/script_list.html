@@ -2,23 +2,44 @@
 
 {% block title %}Script list{% endblock %}
 {% block header %}Script list{% endblock %}
+{% block menu_script_list %}active{% endblock %}
 
 {% block content %}
-<table>
-	<thead>
-		<th>Command</th>
-		<th>Help</th>
-	</thead>
-	<tbody>
-		{% for script in scripts %}
-			<tr>
-				<td>{{ script.command_line }}</td>
-				<td>{{ script.help }}</td>
-			</tr>
-		{% endfor %}
-	</tbody>
-</table>
+<form action="{% url 'section_new' %}" method="POST" class="right">{% csrf_token %}
+    {{ section_form.label }}
+    <input type="submit" value="Add Category" />
+</form>
 
-<a href="{% url 'new_script' %}">Add script</a>
+{% for section in sections %}
+    <h3 class="mb1">{{ section.label }}</h3>
+    {% if section.script_set.count > 0 %}
+		<table class="striped">
+			<thead>
+				<th>Command</th>
+				<th>Description</th>
+				<th>Parameters</th>
+				<th>Action</th>
+			</thead>
+			<tbody>
+                {% for script in section.script_set.all %}
+				<tr>
+					<td>{{ script.command }}</td>
+					<td>{{ script.description }}</td>
+					<td>{{ script.parameters.all|join:" "|default:"None" }}</td>
+					<td><a href="{% url 'script_delete' script.id %}" class="cross confirm-delete">Delete</a></td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+    {% else %}
+        <p>No scripts defined in this category</p>
+    {% endif %}
+{% endfor %}
 
+<div id="dialog-confirm" title="Delete script?">
+  <p>
+    <span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>
+    This script will be permanently deleted. Are you sure ?
+  </p>
+</div>
 {% endblock %}
