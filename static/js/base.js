@@ -35,6 +35,7 @@ $(document).ready(function(){
 	
 	$('#add_more').click(function() {
        	addMore('.parameter:last', 'param');
+       	return false;
    	});
    	
 	function addMore(selector, type){

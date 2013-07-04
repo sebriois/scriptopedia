@@ -10,6 +10,8 @@
     <input type="submit" value="Add Category" />
 </form>
 
+<div class="clear"></div>
+
 {% for section in sections %}
     <h3 class="mb1">{{ section.label }}</h3>
     {% if section.script_set.count > 0 %}

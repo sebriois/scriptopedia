@@ -25,10 +25,27 @@
 	                   {{ param_form.DELETE }}
 	                   <button class="delete_param">Delete</button>
 	               </li>
-	               {{ param_form.as_ul }}
+	               {% with param_form.name as field %}
+	                   <li>{% include "utils/form_field.html" %}</li>
+	               {% endwith %}
+	               {% with param_form.label as field %}
+	                   <li>{% include "utils/form_field.html" %}</li>
+	               {% endwith %}
+	               {% with param_form.param_type as field %}
+	                   <li>{% include "utils/form_field.html" %}</li>
+	               {% endwith %}
+	               {% with param_form.file_type as field %}
+	                   <li>{% include "utils/form_field.html" %}</li>
+	               {% endwith %}
+	               {% with param_form.param_io as field %}
+	                   <li>{% include "utils/form_field.html" %}</li>
+	               {% endwith %}
+	               {% with param_form.is_required as field %}
+	                   <li>{% include "utils/form_field.html" %}</li>
+	               {% endwith %}
 	           </ul>
 	        {% endfor %}
-	        <input type="button" value="+" id="add_more">
+	        <a href="#" id="add_more" class="add">Add parameter</a>
 	    </aside>
     </section>
 

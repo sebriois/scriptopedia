@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <header class="pa1">
+    <header class="pb1 pl1">
         <h1>Scriptopedia</h1>
     </header>
     
@@ -35,7 +35,7 @@
     <nav id="sub-navigation"></nav>
     
     <section class="pa3">
-        <h2>{% block header %}{% endblock %}</h2>
+        <h2 class="left">{% block header %}{% endblock %}</h2>
         {% if messages %}
 		  <ul class="messages unstyled pa0 ma0">
 		    {% for message in messages %}

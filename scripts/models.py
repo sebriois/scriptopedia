@@ -35,9 +35,9 @@ class Parameter( models.Model ):
     name        = models.CharField( u"Name (in command line)", max_length = 100 )
     label       = models.CharField( u"Label (for display in a form)", max_length = 100, blank = True, null = True )
     param_type  = models.IntegerField( u"Type", choices = TYPE_CHOICES )
-    file_type   = models.ForeignKey( FileType, verbose_name = u"File format")
+    file_type   = models.ForeignKey( FileType, verbose_name = u"File format", null = True, blank = True )
     param_io    = models.IntegerField( u"Input/Output ?", choices = IS_INPUT_OR_OUTPUT_CHOICES )
-    is_required = models.BooleanField( u"Required ?", default = True )
+    is_required = models.BooleanField( u"Required ?", default = True, blank = True )
     options     = models.ManyToManyField( Option, verbose_name = u"Select options" )
     
     def __unicode__( self ):

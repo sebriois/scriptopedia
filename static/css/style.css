@@ -122,7 +122,7 @@ table thead, table th {
 }
 
 form label {
-	width: 230px;
+	width: 220px;
 	line-height: 16px;
 	padding: 7px 5px 6px 10px;
 	margin: 0px 16px 3px 0px;
@@ -132,8 +132,8 @@ form label {
 	border-bottom: 2px solid #E0DCC9;
 }
 
-form input[type="text"] {
-	width: 300px;
+form input[type="text"], textarea {
+	width: 250px;
 }
 
 form li {
@@ -173,7 +173,10 @@ ul.parameter {
 .cross {
     background-image: url('../img/icons/cross.png');
 }
-.cross {
+.add {
+	background-image: url('../img/icons/add.png');
+}
+.cross, .add {
     display:inline-block;
     padding: 2px 0px 2px 19px;
     line-height: 18px;
